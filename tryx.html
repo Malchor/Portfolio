@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html id="top">
+ <head>
+    <meta charset="utf-8">
+   <title>Malchor.Inc</title>
+    
+ </head>
+ 
+  <body>
+ 
+     <style>
+     
+
+
+     #nprogress {
+        pointer-events: none;
+      }
+      #nprogress .bar {
+        background: #33312E;
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+      }
+      #nprogress .peg {
+        display: block;
+        position: absolute;
+        right: 0px;
+        width: 100px;
+        height: 100%;
+        box-shadow: 0 0 10px #33312E, 0 0 5px #33312E;
+        opacity: 1;
+        -webkit-transform: rotate(3deg) translate(0px, -4px);
+        -ms-transform: rotate(3deg) translate(0px, -4px);
+        transform: rotate(3deg) translate(0px, -4px);
+      }
+      #nprogress .spinner {
+        display: block;
+        position: fixed;
+        z-index: 1031;
+        top: 15px;
+        right: 15px;
+      }
+      #nprogress .spinner-icon {
+        width: 18px;
+        height: 18px;
+        box-sizing: border-box;
+        border: solid 2px transparent;
+        border-top-color: #33312E;
+        border-left-color: #33312E;
+        border-radius: 50%;
+        -webkit-animation: nprogresss-spinner 400ms linear infinite;
+        animation: nprogress-spinner 400ms linear infinite;
+      }
+      .nprogress-custom-parent {
+        overflow: hidden;
+        position: relative;
+      }
+      .nprogress-custom-parent #nprogress .spinner,
+      .nprogress-custom-parent #nprogress .bar {
+        position: absolute;
+      }
+      @-webkit-keyframes nprogress-spinner {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes nprogress-spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    
+
+
+          h1 { color: rgb(180, 38, 38); } 
+      .potato {
+       margin:  rgb(186, 241, 186) ; padding: 10px; border: 1px solid;
+      }
+      
+      .bold{
+           color:green;
+           font-size:30px ;
+         }
+       .potato a{
+ margin-left: 50px;
+       }
+      
+ .exploding-potato {
+   display: inline-block; 
+ }
+
+.sectiona {
+color: rgb(0, 0, 0);
+font: 16px/22px Rockwell, "Courier Bold", Courier, Georgia, serif;
+background: #ffe0e0;
+border-radius: 9px;
+margin-bottom: 25px;
+ }
+
+.sectionb {
+color: rgb(131, 0, 0);
+font: 16px/22px Rockwell, "Courier Bold", Courier, Georgia, serif;
+background: #ffc1b9;
+border-radius: 50px;
+margin-bottom: 25px;
+margin: 10;
+ }
+ 
+ body {margin: 0;}
+
+.boxed{
+   border: 3px solid rgb(147, 255, 147) ;
+   margin: 245px;
+}
+
+
+.header {
+  color: rgb(131, 0, 0);
+font: 16px/22px Rockwell, "Courier Bold", Courier, Georgia, serif;
+background: #fdccfe;
+
+margin-bottom: 25px;
+margin: 0;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.yes{
+  color: rgb(131, 0, 0);
+font: 16px/22px Rockwell, "Courier Bold", Courier, Georgia, serif;
+background: #fdccfe;
+border-radius: 50px;
+margin-bottom: 25px;
+margin: 0px;
+}
+
+.img{
+  padding: 0px 0px 0px 0px;
+  border-top: 7px solid #e8c7fc;
+  border-right: 7px solid #5a287e;
+  border-bottom: 7px solid #3c135c;
+  border-left: 7px solid #b775e3;
+}
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #c477ff;
+  color: #481475;
+  padding: 0px 0px 0px 0px;
+  border-top: 1px solid #e8c7fc;
+  border-right: 1px solid #5d2486;
+  border-bottom: 1px solid #3e135e;
+  border-left: 1px solid #b775e3;
+}
+.thebutton {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #77fffa;
+  color: #146b75;
+  padding: 0px 0px 0px 0px;
+  border-top: 1px solid #c7fcf6;
+  border-right: 1px solid #247a86;
+  border-bottom: 1px solid #0d4a4b;
+  border-left: 1px solid #75e3d8;
+}
+       </style>
+
+
+
+       <div style="background: rgb(255,255,255);
+       background: linear-gradient(180deg, rgb(184, 191, 191) 30%, rgb(140, 207, 211) 60%, rgb(68, 229, 250) 100%);"> 
+               <div class="potato">
+                <a id="top"></a>
+                 <center>
+                    <div class="sectiona">
+                      <div class="sectionb">
+                        <div class="yes">
+                          <div class="header" id="myHeader">
+                           
+                            <a style="margin: 13px;" class="thebutton" href="#top">to top - </a><a style="margin: 0px;" class="button" href="#edits_tag">edits - </a><a style="margin: 14px;"  class="button" href="#animations_tag">animations - </a><a class="button" style="margin: 0px;" href="#bottom">to bottom - </a>  <h5>(site made by an experienced programmer, 3d DEsigner, animator, and artist)</h5> <img id="photo_tag" src="Malchor logo 2.PNG" width="35" height="35">
+                     </div>
+                     
+                     <script>
+                      window.onscroll = function() {myFunction()};
+                      
+                   
+                      var header = document.getElementById("myHeader");
+                      
+
+                      var sticky = header.offsetTop;
+                      
+                      
+                      function myFunction() {
+                        if (window.pageYOffset > sticky) {
+                          header.classList.add("sticky");
+                        } else {
+                          header.classList.remove("sticky");
+                        }
+                      }
+
+
+                      </script>
+                      </div>
+                      </div>
+                      <p>_________________________________</p>
+                      <h1>HOW TO LUTHER</h1>
+                      <p>_________________________________</p>
+                      <div class="sectionb">
+                 <h2>How to Luther</h2>
+                   <p>Its pretty simple. First, BINGE-WATCH EVERY EPISODE WITHIN 2 DAYS.</p>
+                   <p>Secondly, BINGE-LISTEN TO THE INTRO FOR A YEAR (because it is a banger) <a style="margin: 0px;" href="https://www.youtube.com/watch?v=m_Qg1pQSOa0">here</a>).</p>
+                   <p>Finally, REPEAT THE TWO STEPS ABOVE FIVE TIMES.</p>
+                   <p>The above are the steps to Luther, and a quick summary <a style="margin: 0px;" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a>.</p>
+                   
+                  </a>
+                  </div>
+                  <a>cool YT vid below</a>
+                  <p>----------------------------------------------------------------</p>
+                  
+                  <a> </a>
+                  <iframe height="290" class="img" width="500" src="https://www.youtube.com/embed/JNyzPumCGbQ"></iframe>
+
+                  <div class="sectionb">
+                   <h2>How Luther</h2>
+                   <p>yes.</p>
+                   
+                 <p>Was there anything else  i forgot?</p>
+                   <p>If there was, send me email because i cannot remember anything.</p>
+                   <p>My email:</p>
+                   <a style="margin: 0px;" class="button" href="mailto:FeedbackForMeYes@gmail.com">send</a></div>
+                   <p>----------------------------------------------------------------</p>
+                  </div>
+                
+
+                  
+               </center>
+                   <center><div>
+                    <div id="edits_tag"> 
+           <center> <img id="photo_tag" class="img" src="me luther.PNG" width="700" height="500">         
+            </center>
+            
+              
+            <img id="photo_tag" class="img" src="Brogue final me.jpeg" width="500" height="700"> 
+            <img id="photo_tag" class="img" src="trade offer final me.jpeg" width="500" height="700">
+            <img id="photo_tag" class="img" src="Film Poster me 4.PNG" width="500" height="700">
+          
+          </div>
+            <center>
+              
+              <div id="animations_tag"> </div>
+
+              <iframe height="290" class="img" width="500" src="spin ball acc 2.mp4"></iframe>
+              <iframe height="290" class="img" width="500" src="spin ball 2.mp4"></iframe>
+
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/94/three.min.js"></script>
+             <script>
+ 
+              var camera, scene, renderer;
+              var geometry, material, mesh;
+        
+              function init() {
+        
+                camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 10 );
+                camera.position.z = 3;
+        
+                scene = new THREE.Scene();
+                scene.background = new THREE.Color( 0xDDA0DD );
+        
+                geometry = new THREE.TorusGeometry( 0.5 );
+                material = new THREE.MeshBasicMaterial( { color: 0x8B008B, wireframe: true } );
+        
+                mesh = new THREE.Mesh( geometry, material );
+                scene.add( mesh );
+        
+                renderer = new THREE.WebGLRenderer( { antialias: true } );
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                document.body.appendChild( renderer.domElement );				
+                
+              }
+        
+              function animate( time ) {
+        
+                mesh.rotation.x = time * 0.0005;
+                mesh.rotation.y = time * 0.001;
+        
+                renderer.render( scene, camera );
+                requestAnimationFrame( animate );
+        
+              }
+        
+              init();
+              requestAnimationFrame( animate );
+        
+            </script></center>
+            
+           </div></center>
+         <center>
+ 
+         
+ 
+          <div class="sectiona">
+         2022 — Malchor.Inc© all rights reserved
+         </div>
+        <p>------------------------------O----------------------------</p> 
+        <a id="bottom"></a>
+<!--potato-->
+
+              
+      </center>    
+ 
+      
+
+       
+     
+       
+    </div></div></body></html>
+ 
+
+<!--
+    <!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Account Activated Successfully - Pro Free Host</title>
+        <meta http-equiv="content-language" content="en">
+        <style type="text/css">
+			* {padding: 0; margin: 0;}
+            body {height: 100%; background: #FFF url("https://www.profreehost.com/graphics/slider.jpg") repeat; color: #fff; font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; font-size: 16px;}
+			a {color: #698FB4; outline:none; text-decoration:none;}
+			a:hover {text-decoration: underline;}
+			h1 {color: #49E551; font-weight: 400;}
+			h2 {font-weight: 400; margin: 10px 0 40px;}
+			h3 {font-weight: normal; text-align: left; margin: 0 0 20px;}
+			.wrap {background: rgba(0, 0, 0, 0.4); width: 850px; height: 450px; text-align: center; padding: 80px 40px 10px; margin: 45px auto 0; overflow: hidden;}
+			.logo {display: inline-block; margin: 0 0 40px;}
+			ul {list-style: square; text-align: left; line-height: 26px; padding: 0 0 0 15px;}
+			p {font-size: 30px; font-style: italic;  color: #86B5E0; margin: 20px 0 0;}
+        </style>
+    </head>
+    <body>
+            <div class="wrap">
+				<a href="https://www.profreehost.com" class="logo"><img src="https://www.profreehost.com/graphics/logo.png" /></a>
+				<h1>Congratulations!</h1>
+				<h2>Your Account is active now. Now you can get to work.</h2>
+				<h3>Followings are some suggestions to build your website quickly.</h3>
+				<ul>
+					<li>Delete this html file before uploading your website.</li>
+					<li>Install any popular script (Wordpress, Drupal, MyBB, Presta Shop, etc) with Softaculous auto installer.</li>
+					<li>To learn and resolve issues <a href="https://profreehost.com/forum/">our forum</a> is the best place.</li>
+					<li>If you have any issues with your account you can send us a support ticket through your account's control panel.</li>
+				</ul>
+				<p>Enjoy Webing!</p>
+            </div>
+    </body>
+</html>
+  -->
+<p>e</p>
